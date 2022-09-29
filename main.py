@@ -37,11 +37,12 @@ print(theta)
 print(theta_degree)
 
 
-#
+# 정곱 = 내적 = dot = internal
 # Prove that (a+b)dot c = a dot c + b dot c
-# always holds for three vectors a, b, c.
+# that always holds for three vectors a, b, c.
 max_value = 10000
-vector_size = 4
+# dim 4
+vector_size = 4 
 
 A = np.random.randint(-max_value, max_value, size=vector_size)
 B = np.random.randint(-max_value, max_value, size=vector_size)
