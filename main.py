@@ -35,3 +35,19 @@ print(Va_mul_Vb)
 print(cos_theta)
 print(theta)
 print(theta_degree)
+
+
+#
+# Prove that (a+b)dot c = a dot c + b dot c
+# always holds for three vectors a, b, c.
+max_value = 10000
+vector_size = 4
+
+A = np.random.randint(-max_value, max_value, size=vector_size)
+B = np.random.randint(-max_value, max_value, size=vector_size)
+C = np.random.randint(-max_value, max_value, size=vector_size)
+
+print(A, B, C)
+lhs = np.dot((A + B), C)
+rhs = np.dot(A,C) + np.dot(B, C)
+print(lhs, rhs, lhs == rhs)
